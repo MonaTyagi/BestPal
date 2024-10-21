@@ -160,6 +160,11 @@
      </div>
     </body>
     <footer>
-            &copy; 2022 BestPal
+            &copy; <span id="changingYear"> &nbsp;&nbsp;2022 BestPal
     </footer>
     </html>
+     <script>
+        const cDate = new Date();
+        let y = cDate.getFullYear();
+        document.getElementById("changingYear").innerHTML = y;
+        </script>
