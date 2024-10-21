@@ -121,6 +121,11 @@
 <!--End mc_embed_signup-->
 <br>
 <footer>
-    &copy; 2022 BestPal
+    &copy; <span id="changingYear"></span>&nbsp;BestPal
 </footer>
 </html>
+	<script>
+        const cDate = new Date();
+        let y = cDate.getFullYear();
+        document.getElementById("changingYear").innerHTML = y;
+        </script>
